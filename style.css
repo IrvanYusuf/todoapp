@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* body {
+  background-image: url("./assets/image/𝒫𝒾𝓍𝑒𝓁 𝒫𝒶𝓇𝒶𝒹𝒾𝓈𝑒 176.jpeg");
+} */
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .todo-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.container .todo-container h1 {
+  font-size: 38px;
+  text-align: center;
+}
+.container .todo-container .input-todo-container {
+  margin: 20px 0;
+  display: flex;
+  width: 100%;
+}
+.container .todo-container .input-todo-container #todo-input {
+  padding: 10px;
+  flex-grow: 2;
+  margin-right: 10px;
+  border-radius: 8px;
+}
+.container .todo-container .input-todo-container #btn-todo {
+  padding: 16px 20px;
+  background-color: #7551f5;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.container .todo-container .todo-value-container {
+  width: 100%;
+}
+.container .todo-container .todo-value-list {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #b8b8b8;
+  border-radius: 4px;
+  padding: 10px;
+  width: 100%;
+  font-weight: 400;
+  margin: 10px 0;
+}
+.container .todo-container .todo-value-container div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+  font-weight: normal;
+}
+.container
+  .todo-container
+  .todo-value-container
+  .todo-value-list
+  div
+  #todoCheck {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.container .todo-container .todo-value-container .todo-value-list .btn-edit {
+  padding: 10px;
+  background-color: rgb(238, 238, 100);
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.container .todo-container .todo-value-container .todo-value-list .btn-delete {
+  padding: 10px;
+  background-color: #f56564;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.done {
+  text-decoration: line-through;
+  color: grey;
+}
+
+/* empty todo */
+.container .todo-container .todo-value-container .empty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  color: #888888;
+}
